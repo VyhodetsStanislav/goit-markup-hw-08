@@ -1,0 +1,205 @@
+.header {
+  position: relative;
+  height: 60px;
+  // max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+  border-bottom: 1px solid #ececec;
+  @media screen and (max-width: 767px) {
+    max-width: 480px;
+  }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    width: 753px;
+    height: 80px;
+    padding: 0px 15px;
+  }
+  @media screen and (min-width: 1600px) {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    height: 80px;
+    padding: 0px 15px;
+    width: 1200px;
+  }
+}
+.header__ul {
+  @media screen and (min-width: 480px) {
+  }
+  @media screen and (min-width: 768px) {
+    display: block;
+    margin: 0;
+    padding: 0;
+  }
+  @media screen and (min-width: 1600px) {
+    display: flex;
+    margin-left: 250px;
+  }
+}
+.header__rait {
+}
+.header__nav {
+  @media screen and (min-width: 480px) {
+  }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    // align-items: center;
+    padding: 0;
+    margin: 0;
+  }
+  @media screen and (min-width: 1600px) {
+  }
+}
+.header__hitmen {
+  display: none;
+  @media screen and (min-width: 480px) {
+    display: none;
+  }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    padding: 0;
+    margin: 0;
+  }
+  @media screen and (min-width: 1600px) {
+  }
+}
+
+.header__menu {
+  display: flex;
+}
+// позиционирование пунктов меню
+.header__transition {
+  @media screen and (min-width: 768px) {
+    margin-right: 50px;
+    &:last-child {
+      margin-right: 84px;
+    }
+  }
+  // @media screen and (min-width: 1600px) {
+  // }
+}
+.header__links {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--menu-standart);
+  cursor: pointer;
+}
+.header__links:visited {
+  color: var(--menu-standart);
+}
+.header__links:hover,
+.header__links:focus {
+  color: var(--menu-aktiv);
+}
+.header_logo {
+  margin-top: 16px;
+  margin-left: 15px;
+  margin-right: auto;
+  text-align: center;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: #000000;
+  @media screen and (min-width: 480px) {
+    margin-right: auto;
+  }
+  @media screen and (min-width: 768px) {
+    // width: 134px;
+    height: 28px;
+    border-color: 1px olive;
+    border: 1px olive;
+    margin-right: 88px;
+    font-size: 24px;
+    line-height: 28px;
+  }
+  @media screen and (min-width: 1600px) {
+    // width: 145px;
+    height: 31px;
+    // margin-left: 93px;
+    font-size: 26px;
+    line-height: 31px;
+  }
+}
+.header_logo-color {
+  color: var(--menu-aktiv);
+}
+.header__links-under {
+  position: relative;
+}
+.header__links-under::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translateY(30);
+  display: block;
+  width: 100%;
+  height: 4px;
+  bottom: -31px;
+  background-color: #2196f3;
+  border-radius: 4px;
+}
+// кнопки хедера
+.header__buttons {
+  display: block;
+  margin-right: 0px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--osn-color);
+  margin-left: auto;
+  // width: 165px;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+.header__link-active:hover a,
+.header__link-active:focus a,
+.header__link-active:hover svg,
+.header__link-active:focus svg {
+  color: var(--menu-aktiv);
+  fill: var(--menu-aktiv);
+}
+.header__contact:hover,
+.header__contact:focus {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.header__list + .header__list {
+  margin-left: 0px;
+  @media screen and (min-width: 480px) {
+  }
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1600px) {
+    margin-left: 30px;
+  }
+}
+.header__contact {
+  display: inline-flex;
+  padding: 0px;
+  margin: 0px;
+  margin-right: 10px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  fill: #757575;
+  box-sizing: border-box;
+}
+.header__mail {
+  width: 16px;
+  height: 12px;
+}
+.header__tel {
+  width: 10px;
+  height: 16px;
+}

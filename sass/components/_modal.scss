@@ -1,0 +1,164 @@
+/*------------------- модальное окно -----------------------*/
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow-y: scroll;
+  background-color: #fff;
+  @media screen and (min-width: 480px) {
+    width: 450px;
+    // height: 609px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 450px;
+    // height: 609px;
+  }
+  @media screen and (min-width: 1600px) {
+    width: 528px;
+    // height: 581px;
+  }
+}
+.modal__form {
+  padding: 40px;
+}
+.modal__name {
+  display: block;
+  padding: 0;
+  margin: 0;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  color: #757575;
+  margin-bottom: 4px;
+}
+.modal__h2 {
+  margin-bottom: 12px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+.modal__field {
+  position: relative;
+  display: flex;
+  // поставить алекс элименты друг под другом
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+.modal__field textarea[placeholder="Введите текст"] {
+  height: 120px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+.modal__field:focus-within > .form-svg {
+  fill: #2196f3;
+}
+
+.formcontract {
+  margin-bottom: 30px;
+}
+.modal__input {
+  margin: 0;
+  padding: 12px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding-left: 42px;
+}
+.modal__input:focus {
+  outline: none;
+  border: 1px solid #2196f3;
+}
+.modal__textarea {
+  border-color: rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding: 12px 16px;
+}
+.modal__textarea:focus {
+  outline: none;
+  border: 1px solid #2196f3;
+}
+
+.modal__contract {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.modal__label {
+  margin: 0;
+  padding: 0;
+  border-radius: 4px;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+.modal__input[type="checkbox"] {
+  width: 16px;
+  height: 15px;
+  margin-right: 9px;
+  border: 1px solid #212121;
+}
+.modal__link {
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  text-decoration-line: underline;
+  color: #2196f3;
+}
+.modal__button {
+  width: 200px;
+  height: 50px;
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 16px;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  border: currentColor;
+}
+.modal__icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  fill: #212121;
+}
+.modal__closed {
+  top: 60%;
+  left: 50%;
+  display: inline-block;
+  width: 11px;
+  height: 11px;
+  fill: #212121;
+}
+.modal__button-active:focus-within .modal__closed {
+  fill: #2196f3;
+}
+/* блокируем растагивание окна под коментарий */
+
+.modal__button-active {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 8px;
+  padding: 0;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+}

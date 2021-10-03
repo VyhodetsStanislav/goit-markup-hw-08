@@ -1,0 +1,102 @@
+/* постоянные клиенты */
+.clients {
+  margin: 0;
+  padding: 0;
+  padding: 60px 0px;
+  @media screen and (min-width: 480px) {
+    display: block;
+
+    padding: 60px 15px;
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @media screen and (min-width: 768px) {
+    padding: 60px 0px;
+    width: 768px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @media screen and (min-width: 1600px) {
+    padding-top: 94px;
+    width: 1200px;
+  }
+}
+.clients__h2 {
+  margin: 0;
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+  text-align: center;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+.clients__ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.clients__list {
+  border-radius: 4px;
+  border: 1px solid #afb1b8;
+  @media screen and (min-width: 480px) {
+    height: 92px;
+    margin-top: 30px;
+    width: calc((100% - 2 * 30px) / 2);
+  }
+  @media screen and (max-width: 767px) {
+    &:nth-child(2n + 1) {
+      margin-right: 30px;
+    }
+    &:nth-child(-n + 2) {
+      margin-top: 0;
+    }
+  }
+  // второй сектор+++++++++++++++++++++++++++++++++++++++++++++
+  @media screen and (min-width: 768px) {
+    margin-right: 30px;
+    width: calc((100% - 3 * 30px) / 3);
+  }
+  @media screen and (max-width: 1599px) {
+    @media screen and (min-width: 768px) {
+      &:nth-child(-n + 3) {
+        margin-top: 0;
+      }
+      &:nth-child(3n) {
+        margin-right: 0;
+      }
+    }
+  }
+  @media screen and (min-width: 1600px) {
+    margin-right: 30px;
+    margin-top: 0;
+    &:nth-child(6n) {
+      margin-right: 0;
+    }
+    width: calc((100% - 6 * 30px) / 6);
+  }
+}
+
+.clients__list:hover,
+.clients__list:focus,
+.clients__list:hover svg,
+.clients__list:focus svg {
+  fill: #2196f3;
+  border-color: #2196f3;
+}
+.clients__icon {
+  margin: 0;
+  padding: 0;
+  width: 106px;
+  height: 60px;
+  fill: #afb1b8;
+}

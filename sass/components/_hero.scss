@@ -1,0 +1,103 @@
+.hero {
+  color: var(--belyi);
+  font-weight: 900;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  padding-top: 118px;
+  height: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../../images/jpg/Header768p.jpg");
+  background-color: #c4c4c4;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  @media screen and (min-width: 480px) {
+    height: 400px;
+    width: 480px;
+  }
+  @media screen and (min-width: 768px) {
+    height: 400px;
+    min-width: 768px;
+  }
+  @media screen and (min-width: 1600px) {
+    height: 600px;
+    width: 1600px;
+    padding-top: 200px;
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../../images/jpg/Header1600p.jpg");
+  }
+}
+.hero__h1 {
+  margin-bottom: 30px;
+  margin-right: auto;
+  margin-left: auto;
+
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 42px;
+  /* or 162% */
+  color: #ffffff;
+  @media screen and (min-width: 480px) {
+    height: 84px;
+    width: 360px;
+  }
+  @media screen and (min-width: 768px) {
+    height: 84px;
+    width: 360px;
+  }
+  @media screen and (min-width: 1600px) {
+    height: 120px;
+    width: 696px;
+    font-size: 44px;
+    line-height: 60px;
+    /* or 136% */
+  }
+}
+.hero__button {
+  display: block;
+  margin-top: 0px;
+  padding: 0px;
+  text-align: center;
+  width: 200px;
+  height: 50px;
+  background-color: var(--menu-aktiv);
+  color: var(--belyi);
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  border-radius: 4px;
+  border-color: transparent;
+}
+/* модельное окно */
+.hero__backdrop {
+  /* фиксируется на странице */
+  position: fixed;
+  /* поджимаем в верхний левый угол */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: 250ms opacity cubic-bezier(0.4, 0, 0.2, 1);
+}
+.hero__backdrop.is-hidden {
+  opacity: 0;
+  /* пропускать действия через окна */
+  pointer-events: none;
+}
