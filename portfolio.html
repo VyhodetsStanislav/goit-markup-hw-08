@@ -303,80 +303,87 @@
 
         </section>
     </main>
-    <footer class="footer">
-        <div class="footer__flex">
-            <div class="footer__tab">
-                <div class="footer-item">
-                    <p href="/" lang="en" class="footer__logo"><span class="header_logo-color">Web</span>tudio</p>
-                    <ul class="footer__contact">
-                        <li class="footer__list">
-                            <address class="footer__address">г. Киев, пр-т Леси Украинки, 26</address>
+<footer class="footer">
+    <div class="footer-container container">
+        <div class="footer-main-wrapper">
+            <div class="footer__address">
+                <a class="footer__logo" lang="en" href=""><span class="header_logo-color">Web</span>Studio</a>
+
+                <address class="footer__address-list">
+
+                    <ul class="">
+                        <li class="footer__address-item">
+                            <a class="footer__link-address" href="https://goo.gl/maps/x3xQL9jyj8nePAZVA" target="_blank"
+                                rel="noopener noreferrer">г. Киев, пр-т Леси Украинки, 26</a>
                         </li>
-                        <li class="footer__list"><a href="mailto:info@devstudio.com"
-                                class="footer__links">info@devstudio.com</a></li>
-                        <li class="footer__list"><a href="tel:+380961111111" class="footer__links">+38 096 111 11 11</a>
+                        <li class="footer__address-item"><a class="footer__link"
+                                href="mailto:info@example.com">info@example.com</a></li>
+                        <li class="footer__address-item">
+                            <a class="footer__link" href="tel:+380991111111">+38 099 111 11 11</a>
                         </li>
                     </ul>
-                </div>
-                <div class="footer__sc">
-                    <h3 class="footer__h3">присоединяйтесь</h3>
-                    <div class="networking__flex">
-                        <ul class="networking__list">
-                            <li>
-                                <a href="">
-                                    <svg class="networking__icon">
-                                        <use href="././/images/symbol-defs.svg#icon-camera"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="">
-                                    <svg class="networking__icon">
-                                        <use href="././/images/symbol-defs.svg#icon-bird"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="">
-                                    <svg class="networking__icon">
-                                        <use href="././/images/symbol-defs.svg#icon-facebook"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="">
-                                    <svg class="networking__icon">
-                                        <use href="././/images/symbol-defs.svg#icon-in"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-    
-                </div>
+
+                </address>
             </div>
-    
-            <div class="subscription">
-                <h3 class="subscription__h3">Подпишитесь на рассылку</h3>
-                <div class="subscription__form">
-                    <div class="subscription__email">
-                        <input type="email" name="mail" id="mail" placeholder="E-mail">
-                    </div>
-                    <button class="subscription__button">
-                        <div class="subscription__flex">
-                            Подписаться
-                            <svg class="subscription__icon">
-                                <use href="./images/symbol-defs-tu.svg#icon-icon-send"></use>
+
+            <div class="footer__social">
+
+                <p class="footer__social-title">ПРИСОЕДИНЯЙТЕСЬ</p>
+
+                <ul class="footer__social-list networking-icon">
+
+                    <li class="footer__ic">
+                        <a href="" class="">
+                            <svg class="">
+                                <use href="././/images/symbol-defs.svg#icon-camera"></use>
                             </svg>
-                        </div>
-    
-    
-                    </button>
-    
-                </div>
+                        </a>
+                    </li>
+                    <li class="footer__ic">
+                        <a href="" class="">
+                            <svg class="">
+                                <use href="././/images/symbol-defs.svg#icon-bird"></use>
+                            </svg>
+                        </a>
+                    </li>
+
+                    <li class="footer__ic">
+                        <a href="" class="">
+                            <svg class="">
+                                <use href="././/images/symbol-defs.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+
+                    <li class="footer__ic">
+                        <a href="" class="">
+                            <svg class="">
+                                <use href="././/images/symbol-defs.svg#icon-in"> </use>
+                            </svg>
+                        </a>
+                    </li>
+
+                </ul>
             </div>
         </div>
-    </footer>
+
+        <div class="subscribe">
+
+            <label class="subscribe__label" for="name">Подпишитесь на рассылку</label>
+            <form class="subscribe__form">
+
+                <input class="subscribe__input" type="email" name="email" id="name" placeholder="E-mail" />
+
+                <button class="subscribe__submit" type="submit">Подписаться
+                    <svg class="subscribe__icon" width="24" height="24">
+                        <use href="./images/sprite.svg#icon-icon-send"></use>
+                    </svg>
+                </button>
+            </form>
+        </div>
+    </div>
+
+</footer>
     <script src="./js/modal.js"></script>
     <script src="./js/menu.js"></script>
     <script src="./js/mobile-menu.js"></script>

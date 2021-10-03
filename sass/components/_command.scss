@@ -11,7 +11,7 @@
     padding-top: 60px;
     padding-bottom: 60px;
   }
-  @media screen and (min-width: 1600px) {
+  @media screen and (min-width: 1200px) {
     padding-top: 94px;
     padding-bottom: 94px;
   }
@@ -32,7 +32,7 @@
     font-size: 28px;
     line-height: 33px;
   }
-  @media screen and (min-width: 1600px) {
+  @media screen and (min-width: 1200px) {
     font-size: 36px;
     line-height: 42px;
   }
@@ -44,7 +44,7 @@
     display: flex;
     flex-wrap: wrap;
   }
-  @media screen and (min-width: 1600px) {
+  @media screen and (min-width: 1200px) {
   }
 }
 // карточки
@@ -63,7 +63,7 @@
   @media screen and (min-width: 768px) {
     width: 354px;
   }
-  @media screen and (min-width: 1600px) {
+  @media screen and (min-width: 1200px) {
     width: 270px;
   }
   // первый
@@ -72,7 +72,7 @@
     }
     @media screen and (min-width: 768px) {
     }
-    @media screen and (min-width: 1600px) {
+    @media screen and (min-width: 1200px) {
       // margin-left: 30px;
     }
   }
@@ -82,7 +82,7 @@
     }
     @media screen and (min-width: 768px) {
     }
-    @media screen and (min-width: 1600px) {
+    @media screen and (min-width: 1200px) {
     }
   }
   &:nth-child(-n + 1) {
@@ -90,7 +90,7 @@
     }
     @media screen and (min-width: 768px) {
     }
-    @media screen and (min-width: 1600px) {
+    @media screen and (min-width: 1200px) {
       margin-left: 15px;
     }
   }
@@ -99,7 +99,7 @@
     }
     @media screen and (min-width: 768px) {
     }
-    @media screen and (min-width: 1600px) {
+    @media screen and (min-width: 1200px) {
       margin-right: 15px;
     }
   }
@@ -114,7 +114,7 @@
   @media screen and (min-width: 768px) {
     width: 354px;
   }
-  @media screen and (min-width: 1600px) {
+  @media screen and (min-width: 1200px) {
     width: 270px;
   }
 }
