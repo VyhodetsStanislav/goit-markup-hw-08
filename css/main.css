@@ -646,6 +646,7 @@ textarea {
 }
 
 .modal__name {
+  text-align: left;
   display: block;
   padding: 0;
   margin: 0;
@@ -671,6 +672,7 @@ textarea {
 }
 
 .modal__field {
+  text-align: left;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1368,6 +1370,9 @@ textarea {
 
 @media screen and (min-width: 1600px) {
   .footer__flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     width: 1170px;
     margin-left: auto;
     margin-right: auto;
@@ -1448,6 +1453,12 @@ textarea {
   }
 }
 
+@media screen and (min-width: 1600px) {
+  .footer__address {
+    text-align: left;
+  }
+}
+
 .footer__links {
   font-size: 14px;
   line-height: 1.71;
@@ -1495,6 +1506,7 @@ textarea {
 }
 
 .footer__h3 {
+  position: relative;
   height: 16px;
   font-size: 14px;
   line-height: 16px;
@@ -1621,9 +1633,15 @@ textarea {
 
 @media screen and (min-width: 1600px) {
   .subscription {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    left: 0;
+    -webkit-transform: translateY(-55px);
+            transform: translateY(-55px);
+    -webkit-transform: translateX(900px);
+            transform: translateX(900px);
+    display: block;
   }
 }
 
