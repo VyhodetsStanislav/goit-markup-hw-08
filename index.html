@@ -101,7 +101,7 @@
         </nav>
     </header>
     <main>
-        <!--баннер-->
+<!-- баннер -->
         <section class="hero">
 
             <h1 class="hero__h1">Эффективные решения для вашего бизнеса</h1>
@@ -212,7 +212,12 @@
             <h2 class="command__h2">Наша команда</h2>
             <ul class="container command_flex">
                 <li class="command__list">
-                    <img src="./images/img1.jpg" alt="Игорь Демьяненко" class="command__image">
+                    <picture>
+                        <source srcset="./images/desktop/img.jpg 1x, ./images/desktop/img@2x.jpg 2x" media="(min-width:1200px)" />
+                        <source srcset="./images/tablet/img.jpg 1x, ./images/tablet/img@2x.jpg 2x" media="(min-width:768px)" />
+                        <source srcset="./images/mobile/img.jpg 1x, ./images/mobile/img@2x.jpg 2x" media="(min-width:280px)" />
+                        <img src="#" alt="Игорь Демьяненко" />
+                    </picture>
                     <h3 class="command__h3">Игорь Демьяненко</h3>
                     <p lang="en" class="command__p">Product Designer</p>
                     <ul class="command__icon">
@@ -247,7 +252,12 @@
                     </ul>
                 </li>
                 <li class="command__list">
-                    <img src="./images/img2.jpg" alt="Ольга Репина" width="270" class="command__image">
+                    <picture>
+                        <source srcset="./images/desktop/img1.jpg 1x, ./images/desktop/img1@2x.jpg 2x" media="(min-width:1200px)" />
+                        <source srcset="./images/tablet/img1.jpg 1x, ./images/tablet/img1@2x.jpg 2x" media="(min-width:768px)" />
+                        <source srcset="./images/mobile/img1.jpg 1x, ./images/mobile/img1@2x.jpg 2x" media="(min-width:280px)" />
+                        <img src="#" alt="СОльга Репина" />
+                    </picture>
                     <h3 class="command__h3">Ольга Репина</h3>
                     <p lang="en" class="command__p">Frontend Developer</p>
                     <ul class="command__icon">
@@ -282,7 +292,12 @@
                     </ul>
                 </li>
                 <li class="command__list">
-                    <img src="./images/img3.jpg" alt="Николай Тарасов" width="270" class="command__image">
+                    <picture>
+                        <source srcset="./images/desktop/img2.jpg 1x, ./images/desktop/img2@2x.jpg 2x" media="(min-width:1200px)" />
+                        <source srcset="./images/tablet/img2.jpg 1x, ./images/tablet/img2@2x.jpg 2x" media="(min-width:768px)" />
+                        <source srcset="./images/mobile/img2.jpg 1x, ./images/mobile/img2@2x.jpg 2x" media="(min-width:280px)" />
+                        <img src="#" alt="Николай Тарасов" />
+                    </picture>
                     <h3 class="command__h3">Николай Тарасов</h3>
                     <p lang="en" class="command__p">Marketing</p>
                     <ul class="command__icon">
@@ -317,7 +332,12 @@
                     </ul>
                 </li>
                 <li class="command__list">
-                    <img src="./images/img4.jpg" alt="Михаил Ермаков" width="270" class="command__image">
+                    <picture>
+                        <source srcset="./images/desktop/img3.jpg 1x, ./images/desktop/img3@2x.jpg 2x" media="(min-width:1200px)" />
+                        <source srcset="./images/tablet/img3.jpg 1x, ./images/tablet/img3@2x.jpg 2x" media="(min-width:768px)" />
+                        <source srcset="./images/mobile/img3.jpg 1x, ./images/mobile/img3@2x.jpg 2x" media="(min-width:280px)" />
+                        <img src="#" alt="Михаил Ермаков" />
+                    </picture>
                     <h3 class="command__h3">Михаил Ермаков</h3>
                     <p lang="en" class="command__p">UI Designer</p>
                     <ul class="command__icon">

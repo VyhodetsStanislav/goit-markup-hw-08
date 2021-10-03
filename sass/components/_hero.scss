@@ -1,42 +1,84 @@
 .hero {
-  color: var(--belyi);
-  font-weight: 900;
-  line-height: 1.36;
-  letter-spacing: 0.06em;
+  max-width: 1600px;
+  min-height: 400px;
+  margin: 0 auto;
+  margin-bottom: 60px;
+  text-align: center;
   padding-top: 118px;
-  height: 400px;
-  margin-left: auto;
-  margin-right: auto;
+  padding-bottom: 118px;
   background-image: linear-gradient(
-      to right,
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url("../../images/jpg/Header768p.jpg");
-  background-color: #c4c4c4;
-  background-repeat: no-repeat;
-  background-position: center;
+    url("../../images/mobile/imghero.jpg");
   background-size: cover;
-  @media screen and (min-width: 480px) {
-    height: 400px;
-    width: 480px;
-  }
-  @media screen and (min-width: 768px) {
-    height: 400px;
-    min-width: 768px;
-  }
-  @media screen and (min-width: 1600px) {
-    height: 600px;
-    width: 1600px;
-    padding-top: 200px;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
     background-image: linear-gradient(
-        to right,
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url("../../images/jpg/Header1600p.jpg");
+      url("../../images/mobile/imghero@2x.jpg");
+  }
+
+  @media screen and (min-width: 768px) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../../images/tablet/imghero.jpg");
+  }
+
+  @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../../images/tablet/imghero@2x.jpg");
+  }
+
+  @media screen and (min-width: 1600px) {
+    min-height: 600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../../images/tablet/imghero.jpg");
+  }
+
+  @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../../images/desktop/imghero@2x.jpg");
   }
 }
+.hero {
+  @media screen and (min-width: 480px) {
+    max-height: 400px;
+  }
+  @media screen and (min-width: 768px) {
+    height: 400px;
+  }
+  @media screen and (min-width: 1600px) {
+    max-height: 600px;
+  }
+}
+
 .hero__h1 {
   margin-bottom: 30px;
   margin-right: auto;
