@@ -464,13 +464,11 @@ textarea {
 }
 
 .hero {
-  max-width: 1200px;
+  max-width: 1600px;
   min-height: 400px;
   margin: 0 auto;
   margin-bottom: 60px;
   text-align: center;
-  padding-top: 118px;
-  padding-bottom: 118px;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/mobile/imghero.jpg");
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/mobile/imghero.jpg");
   background-size: cover;
@@ -502,8 +500,6 @@ textarea {
 @media screen and (min-width: 1200px) {
   .hero {
     min-height: 600px;
-    padding-top: 200px;
-    padding-bottom: 200px;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/tablet/imghero.jpg");
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/tablet/imghero.jpg");
   }
@@ -516,21 +512,28 @@ textarea {
   }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 1600px) {
   .hero {
-    max-height: 400px;
+    min-height: 600px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/desktop/hiro1600.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/desktop/hiro1600.jpg");
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1600px) and (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
-    height: 400px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/desktop/hiro1600@2x.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/desktop/hiro1600@2x.jpg");
   }
+}
+
+.hero__form {
+  padding-top: 118px;
 }
 
 @media screen and (min-width: 1200px) {
-  .hero {
-    max-height: 600px;
+  .hero__form {
+    padding-top: 200px;
   }
 }
 
