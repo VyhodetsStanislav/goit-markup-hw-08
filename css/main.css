@@ -1344,6 +1344,12 @@ textarea {
   padding: 60px 15px;
 }
 
+@media screen and (max-width: 1599px) {
+  .footer-container {
+    max-width: 1100px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .footer-container {
     display: -webkit-box;
@@ -1509,6 +1515,13 @@ textarea {
   text-transform: uppercase;
 }
 
+@media screen and (min-width: 1600px) {
+  .footer__social-title {
+    margin-left: 93px;
+    margin-right: 70px;
+  }
+}
+
 .footer__social-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1568,6 +1581,8 @@ textarea {
         -ms-flex-pack: center;
             justify-content: center;
     max-width: 450px;
+    margin-right: auto;
+    margin-left: auto;
   }
 }
 
