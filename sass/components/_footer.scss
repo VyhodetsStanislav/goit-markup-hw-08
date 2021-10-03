@@ -178,23 +178,34 @@
     fill: #ffffff;
   }
 }
-.footer__icon {
-  fill: var(--white-color);
-  width: 20px;
-  height: 20px;
-}
-.networking-icon-li {
-  width: 44px;
-  height: 44px;
+.footer__ic:nth-child(-n + 3) {
   margin-right: 10px;
-  margin-bottom: 30px;
-  fill: #afb1b8;
 }
-.networking-icon {
-  display: inline-flex;
-  padding: 0;
-  margin: 0;
+.subscribe {
+  @media screen and (max-width: 1599px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 450px;
+  }
 }
+// .footer__icon {
+//   fill: var(--white-color);
+//   width: 20px;
+//   height: 20px;
+// }
+// .networking-icon-li {
+//   width: 44px;
+//   height: 44px;
+//   margin-right: 10px;
+//   margin-bottom: 30px;
+//   fill: #afb1b8;
+// }
+// .networking-icon {
+//   display: inline-flex;
+//   padding: 0;
+//   margin: 0;
+// }
 .networking-icon-li {
   // width: 44px;
   // height: 44px;
