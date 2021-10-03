@@ -150,9 +150,9 @@
   justify-content: center;
 }
 
-.footer__social-item {
-  margin-right: 10px;
-}
+// .footer__social-item {
+//   margin-right: 10px;
+// }
 
 .footer__social-link {
   background-color: rgba(255, 255, 255, 0.1);
@@ -165,15 +165,62 @@
   transition-property: color, background-color;
   transition-duration: var(--time-animation);
   transition-timing-function: var(--cubik-transform);
-
-  &:hover,
-  &:focus {
-    background-color: var(--accent-color);
+}
+.footer__ic svg {
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  fill: #ffffff;
+  width: 40px;
+  height: 40px;
+  &:focus,
+  &:hover {
+    background: #2196f3;
+    fill: #ffffff;
   }
 }
-
 .footer__icon {
   fill: var(--white-color);
   width: 20px;
   height: 20px;
+}
+.networking-icon-li {
+  width: 44px;
+  height: 44px;
+  margin-right: 10px;
+  margin-bottom: 30px;
+  fill: #afb1b8;
+}
+.networking-icon {
+  display: inline-flex;
+  padding: 0;
+  margin: 0;
+}
+.networking-icon-li {
+  // width: 44px;
+  // height: 44px;
+  // margin-right: 10px;
+  // margin-bottom: 30px;
+  fill: #afb1b8;
+}
+// .networking-icon-li:nth-child(4) {
+//   margin-right: 0px;
+// }
+.networking-icon:hover,
+.networking-icon:focus {
+  color: var(--menu-aktiv);
+}
+.networking-icon-li:hover,
+.networking-icon-li:focus {
+  background-color: #2196f3;
+  border-radius: 50%;
+  fill: #ffffff;
+}
+.networking-icon-bagr {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+.networking-icon {
+  display: inline-flex;
+  padding: 0;
+  margin: 0;
 }
